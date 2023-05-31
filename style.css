@@ -1,0 +1,127 @@
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif;                                                       /*Yazı tipi Poppins olsun*/
+    box-sizing: border-box;                                                                   /*elementin genişlik ve yüksekliğine border ve padding değerleri dahildir*/
+}
+
+.container {
+    width: 100%;                                                                              /*Sayfanın genişliği*/ 
+    min-height: 100vh;                                                                        /*Sayfanın uzunluğu*/
+    background: linear-gradient(135deg, #4203a9, #90bafc);                                /*135 derece Doğrusal Renk Geçişi*/
+    color: #fff;                                                                            /*Yazıların rengi beyaz olsun*/
+    padding: 10px;                                                                            /*Yazının konumu üst/sağ*/
+}
+
+.calculator {
+    width: 100%;                                                                              /*Kutunun genişliği*/
+    max-width: 600px;                                                                         /*Kutunun maksimum genişliği px değeri ile*/
+    margin-left: 10%;                                                                         /*Kutunun ve sol tarafın arasındaki mesafe*/
+    margin-top: 15%;                                                                          /*Kutunun ve üst tarafın arasındaki mesafe*/
+}
+
+.calculator h1 {
+    font-size: 60px;                                                                          /*h1 tag, yazı boyutu*/
+}
+
+.calculator h1 span {
+    color: #ffff76;                                                                         /*span tagın yazı rengi*/
+}
+
+.input-box {
+    margin: 40px 0;                                                                           /*h1 tagın ve button/input arasındaki üst mesafe*/
+    padding: 35px;                                                                            /*Buttonun ve inputun sağ/sol meesafesi*/
+    border-radius: 10px;                                                                      /*Kenarların yuvarlaklığı*/
+    background: rgba(225,255,255,0.3);                                                      /*Arka plan rengi*/
+    display: flex;                                                                            /*Buttonu ve inputu birbilerinin yanına taşıdık*/
+    align-items: center;                                                                      /*ortaya hizaladık*/
+}
+
+.input-box input {
+    flex: 1;                                                                                  /*İnputun genişliğini sabitledik*/
+    margin-right: 20px;                                                                       /*İnputu ve buttonun arasındaki mesafeyi ayarladık*/
+    padding: 14px 20px;                                                                       /*alt/üst/sağ/sol genişliğini ayarladık input kutusunun*/
+    border: 0;                                                                                /*Kenarlık yok*/
+    outline: 0;                                                                               /*Etiketin sınırları dışında çizilen bir çizgi yok (öne çıkmasın diye)*/
+    font-size: 18px;                                                                          /*Yazı büyüklüğü*/
+    border-radius: 5px;                                                                       /*Kenarlığın yuvarlak olması*/
+    position: relative;                                                                       /*Normal konumuna göre konumlandırıldı*/
+}
+
+.input-box button {
+    background: #ffff76;                                                                    /*Arka plan rengi*/
+    border: 0;                                                                                /*Kenarlık yok*/
+    outline: 0;                                                                               /*Etiketin sınırları dışında çizilen bir çizgi yok (öne çıkmasın diye)*/ 
+    padding: 15px 30px;                                                                       /*Buttonun genişliğini üst/sağ/sol/alt ayarladık*/
+    border-radius: 5px;                                                                       /*Kenarlığın yuvarlak olması*/
+    font-size: 15px;                                                                          /*Yazı boyutu*/
+    font-weight: 500;                                                                         /*Yazının kalınlığı*/
+    color: #333;                                                                            /*Yazı rengi*/
+    cursor: pointer;                                                                          /*mouse işaretçisinin stilini belirledik*/
+}   
+
+.input-box input::-webkit-calendar-picker-indicator {                                         /*Date iconu*/
+    top: 0;                                                                                   /*Alt*/
+    left: 0;                                                                                  /*Sol*/
+    right: 0;                                                                                 /*Sağ*/
+    bottom: 0;                                                                                /*Üst*/
+    height: auto;                                                                             /*Yüksekliği automatic olsun*/
+    width: auto;                                                                              /*Genişliği automatic olsun*/
+    position: absolute;                                                                       /*Pozisyonu*/
+    background-position: calc(100% - 10px);                                                   /*Arka plan pozisyonu*/
+    background-size: 30px;                                                                    /*Arka plan boyutu*/
+    cursor: pointer;                                                                          /*Mouse işaretçisinin stilini belirledik*/
+}
+
+#result {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#result span {
+    color: #ffff76;
+}
+
+.neon-text{
+    font-size: 35px;
+    margin-left: 58%;
+    margin-top: -37%;
+    color: #edecef;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #B983FF,
+      0 0 80px #B983FF,
+      0 0 90px #B983FF,
+      0 0 100px #94B3FD,
+      0 0 150px #99FEFF;
+}
+
+.nt-1{
+    opacity: 0.8;
+}
+
+.nt-2{
+    opacity: 0.7;
+}
+
+.nt-3{
+    opacity: 0.6;
+}
+
+.nt-4{
+    opacity: 0.5;
+}
+
+.nt-5{
+    opacity: 0.4;
+}
+
+.nt-6{
+    opacity: 0.3;
+}
+
+.nt-7{
+    opacity: 0.2;
+}
